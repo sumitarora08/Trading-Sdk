@@ -20,8 +20,10 @@ trading-sdk/
 ├── requirements.txt
 └── README.md
 
-**Data Schema (In-Memory)
-Instrument**
+**Data Schema (In-Memory)**
+
+**Instrument**
+
 {
   "symbol": "RELIANCE",
   "exchange": "NSE",
@@ -30,6 +32,7 @@ Instrument**
 }
 
 **Order**
+
 {
   "orderId": 1,
   "symbol": "RELIANCE",
@@ -39,7 +42,9 @@ Instrument**
   "price": null,
   "status": "EXECUTED"
 }
+
 **Trade**
+
 {
   "orderId": 1,
   "symbol": "RELIANCE",
@@ -48,6 +53,7 @@ Instrument**
 }
 
 **Portfolio Holding**
+
 {
   "symbol": "RELIANCE",
   "quantity": 5,
@@ -56,6 +62,7 @@ Instrument**
 }
 
 **API Flow (High-Level)**
+
 User fetches available instruments
 User places a BUY/SELL order
 MARKET orders are executed immediately
@@ -64,6 +71,7 @@ Trades update portfolio holdings
 User can query orders, trades, and portfolio at any time
 
 **Key Design Decisions**
+
 Single mocked user (no authentication)
 MARKET orders execute instantly
 LIMIT orders are validated and stored
@@ -72,10 +80,12 @@ RESTful API design with proper HTTP status codes
 Auto-generated Swagger documentation
 
 **API DOCUMENTATION-**
+
 Swagger UI is available at 
 http://localhost:8000/docs
 
 **Error Handling**
+
 The system validates inputs and returns meaningful errors for:
 Invalid quantity
 Missing price for LIMIT order
