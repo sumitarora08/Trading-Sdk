@@ -1,7 +1,9 @@
 # Trading-Sdk
+
 Developed a simplified trading backend using FastAPI that simulates core stock broking workflows. Implemented REST APIs for instruments, order placement, order tracking, trade execution, and portfolio management using in-memory storage, with Swagger-based API documentation and validation.
 
 **#PROJECT DESCRIPTION**
+
 This project implements a mock trading backend system that simulates essential workflows of an online stock broking platform. It exposes RESTful APIs to view instruments, place orders, track order status, view executed trades, and fetch portfolio holdings. The system uses in-memory storage and is designed for clarity, correctness, and easy extensibility.
 
 **#SCHEMA**
